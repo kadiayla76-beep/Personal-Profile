@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    color: #26334a;
+}
+
+/* NAVBAR */
+header {
+    background: #70520c;
+    padding: 15px 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.login {
+    background: white;
+    color: #70520c;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5efe2;
+    margin: 25px;
+    padding: 60px;
+    border-radius: 20px;
+    min-height: 300px;
+}
+
+.hero h1 {
+    color: #bd8a21;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.hero img {
+    width: 35%;
+}
+
+button {
+    background: #bd8a21;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* TENTANG KAMI */
+section {
+    padding: 35px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fitur {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: center;
+}
+
+.fitur div {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    flex: 1;
+}
+
+/* KATALOG */
+.produk {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #70520c;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .hero img {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .fitur {
+        flex-direction: column;
+    }
+
+    .produk {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
